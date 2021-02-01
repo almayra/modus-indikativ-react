@@ -1,0 +1,75 @@
+@import "../../sass-modules/colors";
+
+.overflow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &.button {
+    align-items: center;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: $gray0;
+
+    &.dark {
+      background-color: #3f3f3f;
+      color: $gray0;
+    }
+  }
+
+  .toggle {
+    position: relative;
+  }
+
+  .menu {
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 250ms ease;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+      0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+  }
+
+  .menu-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    &.small {
+      padding: 2px 8px;
+    }
+
+    &.default {
+      padding: 4px 8px;
+    }
+
+    &.large {
+      padding: 8px 8px;
+    }
+  }
+
+  .menu-item:hover {
+    background-color: $gray50;
+  }
+
+  .toggle button.focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+  }
+}

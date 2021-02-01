@@ -1,0 +1,61 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.spacing {
+  * {
+    font-family: "IBM Plex Sans", sans-serif;
+    border: 0px;
+    font-weight: 400;
+    margin: 10px;
+  }
+
+  .spacing01 {
+    display: block;
+    background-color: $safe-primary;
+    margin-top: 10px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .spacing02 {
+    display: block;
+    background-color: $safe-primary;
+    width: 8px;
+    height: 8px;
+  }
+
+  .spacing03 {
+    display: block;
+    background-color: $safe-primary;
+    width: 16px;
+    height: 16px;
+  }
+
+  .spacing04 {
+    display: block;
+    background-color: $safe-primary;
+    width: 24px;
+    height: 24px;
+  }
+
+  .spacing05 {
+    display: block;
+    background-color: $safe-primary;
+    width: 32px;
+    height: 32px;
+  }
+
+  .spacing06 {
+    display: block;
+    background-color: $safe-primary;
+    width: 40px;
+    height: 40px;
+  }
+
+  .spacing07 {
+    display: block;
+    background-color: $safe-primary;
+    width: 48px;
+    height: 48px;
+  }
+}

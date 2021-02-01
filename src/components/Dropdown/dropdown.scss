@@ -1,0 +1,81 @@
+@import "../../sass-modules/colors";
+
+.dropdown {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  align-items: flex-start;
+
+  &.button {
+    margin-top: 4px;
+    align-items: center;
+    flex-direction: row;
+    width: 288px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+
+    .prepend {
+      margin-right: 16px;
+    }
+
+    .append {
+      right: 8px;
+      position: absolute;
+    }
+  }
+
+  .toggle {
+    position: relative;
+  }
+
+  .menu {
+    width: 288px;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: $gray0;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 250ms ease;
+    box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.1),
+      0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+  }
+  .menu-item {
+    cursor: pointer;
+    padding: 8px 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .menu-item:hover {
+    background-color: $gray50;
+  }
+
+  .toggle button.focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+  }
+}

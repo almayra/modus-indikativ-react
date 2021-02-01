@@ -1,0 +1,64 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+.chat-room {
+  &.outbound-chat {
+    .bubble {
+      // background-color: $gray50;
+      border-bottom-right-radius: 0;
+      background-color: $empofarm-primary;
+
+      .text-message {
+        color: $gray0;
+      }
+    }
+  }
+
+  &.inbound-chat {
+    .bubble {
+      background-color: $gray50;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  .bubble {
+    width: fit-content;
+    border-radius: 6px;
+    padding: 0;
+
+    .with-image {
+      display: flex;
+      flex-direction: column;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      width: 250px;
+      height: 104px;
+    }
+
+    .text-message {
+      padding: 4px 8px;
+      color: $gray700;
+      vertical-align: middle;
+
+      .link {
+        color: #006dcc;
+      }
+
+      .icon {
+        &.prepend {
+          padding-right: 4px;
+        }
+
+        &.append {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .bottom-text {
+    margin-top: 4px;
+    padding-left: 8px;
+    color: $gray700;
+  }
+}

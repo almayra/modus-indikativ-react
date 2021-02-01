@@ -1,0 +1,43 @@
+@import "../../sass-modules/colors";
+
+.vertical-tile {
+  max-width: 15rem;
+  background-color: $gray0;
+
+  .primitive-tile {
+    position: relative;
+    display: inline-flex;
+
+    .image {
+      width: 100%;
+    }
+
+    .component-overflow {
+      margin-left: -32px;
+    }
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    .badge-container {
+      display: flex;
+      flex-direction: row;
+
+      .badge {
+        margin: auto;
+      }
+    }
+  }
+
+  .upper-content {
+    padding: 8px;
+  }
+}

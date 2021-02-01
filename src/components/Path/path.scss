@@ -1,0 +1,129 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+.path {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+
+  &.default {
+    .start {
+      color: $gray700;
+      background-color: $gray50;
+    }
+    .middle {
+      color: $gray700;
+      background-color: $gray50;
+    }
+    .end {
+      color: $gray700;
+      background-color: $gray50;
+    }
+    .divider-before {
+      border-left: 10px solid $gray50;
+    }
+    .divider-after {
+      border-top: 17.5px solid $gray50;
+      border-bottom: 17.5px solid $gray50;
+    }
+  }
+
+  &.active {
+    .start {
+      background-color: #005fb2;
+    }
+    .middle {
+      background-color: #005fb2;
+    }
+    .end {
+      background-color: #005fb2;
+    }
+    .divider-before {
+      border-left: 10px solid #005fb2;
+    }
+    .divider-after {
+      border-top: 17.5px solid #005fb2;
+      border-bottom: 17.5px solid #005fb2;
+    }
+  }
+
+  &.complete {
+    .start {
+      background-color: #4bca81;
+    }
+    .middle {
+      background-color: #4bca81;
+    }
+    .end {
+      background-color: #4bca81;
+    }
+    .divider-before {
+      border-left: 10px solid #4bca81;
+    }
+    .divider-after {
+      border-top: 17.5px solid #4bca81;
+      border-bottom: 17.5px solid #4bca81;
+    }
+  }
+
+  &.lost {
+    .start {
+      background-color: #c23934;
+    }
+    .middle {
+      background-color: #c23934;
+    }
+    .end {
+      background-color: #c23934;
+    }
+    .divider-before {
+      border-left: 10px solid #c23934;
+    }
+    .divider-after {
+      border-top: 17.5px solid #c23934;
+      border-bottom: 17.5px solid #c23934;
+    }
+  }
+
+  .start {
+    color: $gray0;
+    padding: 6px 12px;
+    background-color: $gray25;
+    border: 2px solid transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .middle {
+    color: $gray0;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    background-color: $gray25;
+  }
+
+  .end {
+    color: $gray0;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    background-color: $gray25;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .divider {
+    &-before {
+      border-left: 10px solid transparent;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+    }
+
+    &-after {
+      border-left: 8px solid transparent;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.component-btn {
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  &-primary {
+    color: $gray0;
+    background-color: $empofarm-primary;
+    &:hover {
+      background-color: $empofarm-tint01;
+    }
+    &:disabled {
+      background-color: $gray25;
+      color: $gray400;
+    }
+    &:active {
+      background-color: $empofarm-shade02;
+    }
+  }
+
+  &-secondary {
+    border: 1px solid $gray500;
+    color: $gray700;
+    background-color: $gray0;
+
+    &:hover {
+      border: 1px solid $gray500;
+      background-color: $gray50;
+      color: $empofarm-primary;
+    }
+
+    &:active {
+      border: 1px solid $gray500;
+      background-color: $gray100;
+      color: $empofarm-primary;
+    }
+
+    &:disabled {
+      background-color: $gray50;
+      color: $gray400;
+    }
+  }
+
+  &-tertiary {
+    background-color: transparent;
+    color: #0078d4;
+
+    &:hover {
+      background-color: $gray25;
+      color: #0078d4;
+    }
+
+    &:active {
+      background-color: $gray50;
+      color: #0078d4;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      color: $gray300;
+    }
+  }
+
+  &-danger {
+    color: $gray0;
+    background-color: $danger-primary;
+
+    &:hover {
+      color: $gray0;
+      background-color: $danger-tint01;
+    }
+
+    &:active {
+      color: $gray0;
+      background-color: $danger-shade02;
+    }
+
+    &:disabled {
+      color: $gray400;
+      background-color: $danger-tint04;
+    }
+  }
+
+  &-small {
+    padding: 6px 8px;
+    height: 24px;
+  }
+
+  &-medium {
+    padding: 6px 16px;
+    height: 32px;
+  }
+
+  &-large {
+    padding: 6px 20px;
+    height: 32px;
+  }
+
+  &-icon {
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+
+    &-append {
+      margin-left: 10px;
+      &.component-btn-icon-split {
+        margin-left: 10px;
+        border-left: 1px solid $gray200;
+        padding-left: 8px;
+        margin-right: -10px;
+      }
+    }
+
+    &-prepend {
+      margin-right: 10px;
+      &.component-btn-icon-split {
+        margin-right: 10px;
+        border-right: 1px solid $gray200;
+        padding-right: 8px;
+        margin-left: -10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../sass-modules/colors";
+
+.tab-item {
+  display: inline-flex;
+  align-items: center;
+  color: $gray600;
+  padding: 6px 16px;
+  cursor: pointer;
+
+  .icon {
+    margin-right: 4px;
+  }
+
+  &.version-1 {
+    &.selected {
+      border-top: 2px solid $empofarm-primary;
+      background-color: $gray25;
+    }
+
+    &.unselected {
+      background-color: $gray50;
+    }
+
+    &.hover {
+      background-color: $gray100;
+    }
+
+    &:hover {
+      background-color: $gray100;
+    }
+  }
+
+  &.version-2 {
+    &.selected {
+      border-bottom: 2px solid $empofarm-primary;
+      background-color: transparent;
+    }
+
+    &.unselected {
+      background-color: transparent;
+    }
+
+    &.hover {
+      background-color: $gray100;
+    }
+
+    &:hover {
+      background-color: $gray100;
+    }
+  }
+
+  &.version-3 {
+    &.selected {
+      border-right: 7px solid $empofarm-primary;
+      background-color: $gray25;
+    }
+
+    &.unselected {
+      background-color: $gray50;
+    }
+
+    &.hover {
+      background-color: $gray100;
+    }
+
+    &:hover {
+      background-color: $gray100;
+    }
+  }
+}

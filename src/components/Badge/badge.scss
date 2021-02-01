@@ -1,0 +1,64 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.label-component {
+  &.label-gray {
+    .label {
+      background-color: $gray500;
+      color: $gray0;
+    }
+  }
+
+  &.label-light-gray {
+    .label {
+      background-color: $gray200;
+      color: $gray700;
+    }
+  }
+
+  &.label-white {
+    .label {
+      border: 1px solid $gray200;
+      background-color: $gray0;
+      color: $gray700;
+    }
+  }
+
+  &.label-green {
+    .label {
+      background-color: #107c10;
+      color: $gray0;
+    }
+  }
+
+  &.label-red {
+    .label {
+      background-color: $danger-primary;
+      color: $gray0;
+    }
+  }
+
+  &.label-yellow {
+    .label {
+      background-color: $warning-primary;
+      color: $gray0;
+    }
+  }
+
+  .label {
+    border: 0;
+    border-radius: 4px;
+    display: inline-flex;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    align-items: flex-start;
+    color: $gray700;
+    padding: 4px 8px;
+    background-color: transparent;
+
+    .icon {
+      margin-right: 4px;
+    }
+  }
+}

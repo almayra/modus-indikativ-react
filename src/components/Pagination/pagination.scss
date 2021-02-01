@@ -1,0 +1,121 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.pagination {
+  color: $gray200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-radius: 2px;
+
+  .arrow,
+  .number {
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      margin: 0 2px;
+      color: $gray700;
+      font-size: 16px;
+      line-height: 1;
+      user-select: none;
+      -webkit-user-select: none;
+      background-color: $gray0;
+      border-radius: 2px;
+      border: 0.5px solid $gray100;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        outline-color: transparent;
+      }
+      &:active {
+        box-shadow: none !important;
+        color: $gray0;
+        background-color: $empofarm-primary;
+        outline-color: transparent;
+      }
+    }
+  }
+
+  .arrow {
+    &.first {
+      button {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-left: none;
+      }
+    }
+    &.last {
+      button {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-right: none;
+      }
+    }
+    &.disabled {
+      button {
+        color: $gray200;
+        background-color: $gray0;
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+        &:active {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .number {
+    button {
+      border: 1px solid $gray100;
+      color: $gray700;
+      &:hover {
+        background-color: $gray50;
+      }
+    }
+
+    &.active {
+      button {
+        color: $empofarm-primary;
+        background-color: #ffffff;
+        border: 1px solid $empofarm-primary;
+        box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+          0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+      }
+    }
+    &.disabled {
+      button {
+        color: $gray200;
+        background-color: $gray0;
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        &:active {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}

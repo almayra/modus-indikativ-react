@@ -1,0 +1,101 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+.component {
+  &-table {
+    width: 100%;
+
+    &.bordered {
+      tr {
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+
+    thead {
+      box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+        0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+
+      &.dark {
+        th {
+          background-color: #f3f2f1;
+          color: inherit;
+        }
+      }
+    }
+    th {
+      padding: 20px 12px;
+      background-color: $gray0;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $gray700;
+
+      .icon {
+        vertical-align: 2px;
+        align-items: center;
+        // vertical-align: middle;
+
+        &.prepend {
+          padding-right: 8px;
+        }
+
+        &.append {
+          padding-left: 8px;
+        }
+      }
+
+      &.accent {
+        color: $empofarm-primary;
+      }
+    }
+
+    td {
+      padding: 12px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+
+      &.dual-string {
+        padding: 0;
+      }
+
+      .icon {
+        padding-right: 8px;
+        vertical-align: 2px;
+      }
+
+      &.bold {
+        font-weight: 600;
+      }
+    }
+
+    tbody {
+      margin-top: 1px;
+      box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+        0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+
+      tr {
+        background-color: white;
+      }
+
+      tr:hover {
+        background-color: #e1eadb;
+        cursor: pointer;
+      }
+    }
+
+    tfoot {
+      box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+        0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+      background-color: #fff;
+
+      tr {
+        td {
+          padding: 1.5em 12px;
+        }
+      }
+    }
+  }
+}

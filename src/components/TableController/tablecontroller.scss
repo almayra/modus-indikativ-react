@@ -1,0 +1,18 @@
+@import "../../sass-modules/colors";
+
+.controller-container {
+  padding: 16px;
+  background-color: $gray50;
+  display: flex;
+  justify-content: space-between;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .item {
+      margin-right: 18px;
+    }
+  }
+}

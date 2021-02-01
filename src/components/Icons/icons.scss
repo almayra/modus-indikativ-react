@@ -1,0 +1,67 @@
+@import "../Colors/colors.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+
+  .comment {
+    justify-content: center;
+    color: $gray500;
+    a {
+      color: $empofarm-primary;
+    }
+  }
+
+  .searchAndCodeContainer {
+    color: $gray25;
+    display: flex;
+    align-items: center;
+
+    .search {
+      width: 200px;
+      margin-right: 50px;
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    .iconCard {
+      background-color: $gray25;
+      width: 144px;
+      max-width: 144px;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      justify-content: space-around;
+      align-items: center;
+      fill: $gray800;
+      color: $gray800;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $gray50;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .name {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.color {
+  * {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: $gray800;
+    padding: 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+
+  // empofarm
+  .empofarmPrimary {
+    color: $gray25;
+    background-color: $empofarm-primary;
+  }
+  .empofarmTint01 {
+    background-color: $empofarm-tint01;
+  }
+  .empofarmTint02 {
+    background-color: $empofarm-tint02;
+  }
+  .empofarmTint03 {
+    background-color: $empofarm-tint03;
+  }
+  .empofarmTint04 {
+    background-color: $empofarm-tint04;
+  }
+  .empofarmTint04 {
+    background-color: $empofarm-tint04;
+  }
+  .empofarmTint05 {
+    background-color: $empofarm-tint05;
+  }
+  .empofarmTint06 {
+    background-color: $empofarm-tint06;
+  }
+  .empofarmTint07 {
+    background-color: $empofarm-tint07;
+  }
+  .empofarmShade01 {
+    color: $gray25;
+    background-color: $empofarm-primary-shade01;
+  }
+  .empofarmShade02 {
+    color: $gray25;
+    background-color: $empofarm-shade02;
+  }
+  .empofarmShade03 {
+    color: $gray25;
+    background-color: $empofarm-shade03;
+  }
+
+  // fansnya
+  .fansappPrimary {
+    color: $gray25;
+    background-color: $fansapp-primary;
+  }
+  .fansappTint01 {
+    background-color: $fansapp-tint01;
+  }
+  .fansappTint02 {
+    background-color: $fansapp-tint02;
+  }
+  .fansappTint03 {
+    background-color: $fansapp-tint03;
+  }
+  .fansappTint04 {
+    background-color: $fansapp-tint04;
+  }
+  .fansappTint04 {
+    background-color: $fansapp-tint04;
+  }
+  .fansappTint05 {
+    background-color: $fansapp-tint05;
+  }
+  .fansappTint06 {
+    background-color: $fansapp-tint06;
+  }
+  .fansappShade01 {
+    color: $gray25;
+    background-color: $fansapp-primary-shade01;
+  }
+  .fansappShade02 {
+    color: $gray25;
+    background-color: $fansapp-shade02;
+  }
+  .fansappShade03 {
+    color: $gray25;
+    background-color: $fansapp-shade03;
+  }
+
+  // Monochrome
+  .gray0 {
+    background-color: $gray0;
+  }
+  .gray25 {
+    background-color: $gray25;
+  }
+  .gray50 {
+    background-color: $gray25;
+  }
+  .gray100 {
+    background-color: $gray100;
+  }
+  .gray200 {
+    background-color: $gray200;
+  }
+  .gray300 {
+    color: $gray25;
+    background-color: $gray300;
+  }
+  .gray400 {
+    color: $gray25;
+    background-color: $gray400;
+  }
+  .gray500 {
+    color: $gray25;
+    background-color: $gray500;
+  }
+  .gray600 {
+    color: $gray25;
+    background-color: $gray600;
+  }
+  .gray700 {
+    color: $gray25;
+    background-color: $gray700;
+  }
+  .gray800 {
+    color: $gray25;
+    background-color: $gray800;
+  }
+  .gray900 {
+    color: $gray25;
+    background-color: $gray900;
+  }
+  .gray950 {
+    color: $gray25;
+    background-color: $gray950;
+  }
+}

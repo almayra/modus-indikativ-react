@@ -1,0 +1,111 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.input-container {
+  width: 400px;
+
+  &.input-state-rest {
+    .input {
+      background-color: $gray25;
+      color: $gray500;
+      border: none;
+    }
+
+    .input-bottom-text {
+      color: $gray600;
+    }
+  }
+
+  &.input-state-focused {
+    .input {
+      border: 1px solid $gray200;
+      background-color: $gray0;
+      color: $gray700;
+    }
+
+    .input-bottom-text {
+      color: $gray600;
+    }
+  }
+
+  &.input-state-valid {
+    .input {
+      border: 1px solid $safe-tint03;
+      background-color: $gray0;
+      color: $gray700;
+    }
+
+    .input-bottom-text {
+      color: $gray600;
+    }
+  }
+
+  &.input-state-error {
+    .input {
+      border: 1px solid $danger-tint02;
+      background-color: $gray0;
+      color: $gray700;
+    }
+
+    .input-bottom-text {
+      color: $danger-tint02;
+    }
+  }
+
+  .input {
+    border-radius: 2px;
+    padding: 4px 12px 4px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    border: 1px solid transparent;
+    &::placeholder {
+      color: $gray500;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 3px $gray200;
+      border-radius: 2px;
+    }
+    &:disabled {
+      background-color: #f3f2f1;
+      border-color: #f3f2f1;
+    }
+
+    // EXTRA COMPONENT
+    &-label {
+      margin-bottom: 4px;
+      color: $gray700;
+    }
+
+    &-bottom-text {
+      color: $gray600;
+      margin-top: 4px;
+      padding-left: 12px;
+    }
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg width='0.75em' height='0.75em' viewBox='0 0 16 16' class='bi bi-chevron-down' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: 50%;
+  }
+
+  select {
+    padding-right: 22px;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg width='0.75em' height='0.75em' viewBox='0 0 16 16' class='bi bi-chevron-down' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: 50%;
+  }
+  textarea {
+    min-height: 100px;
+  }
+}

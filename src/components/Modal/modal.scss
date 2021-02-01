@@ -1,0 +1,39 @@
+@import "../../sass-modules/colors";
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray50;
+
+  &.wide {
+    max-width: 1084px;
+  }
+
+  &.xlarge {
+    max-width: 778px;
+  }
+
+  &.large {
+    max-width: 684px;
+  }
+
+  &.medium {
+    max-width: 484px;
+  }
+
+  &.narrow {
+    max-width: 254px;
+  }
+
+  .modal-head {
+    padding: 24px 24px 16px;
+  }
+
+  .modal-body {
+    padding: 0px 24px 48px 24px;
+    line-height: 24px;
+  }
+  .footer {
+    bottom: 0;
+  }
+}

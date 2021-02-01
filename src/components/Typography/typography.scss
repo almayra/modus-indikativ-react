@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+.typography {
+  display: inline-block;
+  color: #201f1e;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "IBM Plex Sans", sans-serif;
+
+  &.bold {
+    font-weight: 500;
+  }
+
+  &.metadata {
+    &-01 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &-02 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &.body-short {
+    &-01 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-02 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &.body-long {
+    &-01 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &-02 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &.heading {
+    &-01 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-02 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &-03 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &-04 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &-05 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &-06 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &-07 {
+      font-size: 42px;
+      line-height: 56px;
+    }
+
+    &-08 {
+      font-size: 54px;
+      line-height: 64px;
+    }
+  }
+}

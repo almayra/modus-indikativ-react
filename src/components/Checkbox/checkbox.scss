@@ -1,0 +1,172 @@
+@import "../../sass-modules/colors";
+
+.container-component {
+  display: block;
+  position: relative;
+
+  &.monochrome {
+    .checkbox,
+    .indeterminate {
+      border: 2px solid $gray500;
+    }
+
+    input:checked ~ .checkbox {
+      background-color: $gray500;
+    }
+    input:checked ~ .indeterminate {
+      background-color: $gray500;
+    }
+  }
+
+  &.green {
+    .checkbox,
+    .indeterminate {
+      border: 2px solid $empofarm-primary;
+    }
+
+    input:checked ~ .checkbox {
+      background-color: $empofarm-primary;
+    }
+    input:checked ~ .indeterminate {
+      background-color: $empofarm-primary;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    &.default {
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+
+      &.checkbox:after {
+        left: 7px;
+        bottom: 5px;
+        width: 6px;
+        height: 12px;
+        border: solid $gray0;
+        border-width: 0 2px 2px 0;
+      }
+    }
+
+    &.small {
+      height: 16px;
+      width: 16px;
+      border-radius: 3px;
+
+      &.checkbox:after {
+        left: 4px;
+        bottom: 3px;
+        width: 5px;
+        height: 8px;
+        border: solid $gray0;
+        border-width: 0 2px 2px 0;
+      }
+    }
+
+    &.xsmall {
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+
+      &.checkbox:after {
+        left: 3px;
+        bottom: 2px;
+        width: 3px;
+        height: 6px;
+        border: solid $gray0;
+        border-width: 0 1px 1px 0;
+      }
+    }
+  }
+
+  .checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ .checkbox:after {
+    display: block;
+  }
+
+  .indeterminate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    &.default {
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+
+      &.indeterminate:after {
+        left: 6px;
+        bottom: 6px;
+        width: 8px;
+        height: 12px;
+        border: solid $gray0;
+        border-width: 0 3px 0px 0;
+      }
+    }
+
+    &.small {
+      height: 16px;
+      width: 16px;
+      border-radius: 3px;
+
+      &.indeterminate:after {
+        left: 3px;
+        bottom: 4px;
+        width: 5px;
+        height: 7px;
+        border: solid $gray0;
+        border-width: 0 2px 0px 0;
+      }
+    }
+
+    &.xsmall {
+      height: 12px;
+      width: 12px;
+      border-radius: 2px;
+
+      &.indeterminate:after {
+        left: 2px;
+        bottom: 2px;
+        width: 4px;
+        height: 6px;
+        border: solid $gray0;
+        border-width: 0 2px 0px 0;
+      }
+    }
+  }
+
+  .indeterminate:after {
+    content: "";
+    position: absolute;
+    display: none;
+    -webkit-transform: rotate(00deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  input:checked ~ .indeterminate:after {
+    display: block;
+  }
+}

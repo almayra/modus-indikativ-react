@@ -1,0 +1,52 @@
+@import "../../sass-modules/colors";
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $gray0;
+  padding: 8px 16px;
+
+  .head {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    .logo {
+      padding-right: 9px;
+    }
+
+    .select {
+      margin-top: -2px;
+    }
+  }
+
+  .divider {
+    border: 1px solid $gray100;
+    height: 25px;
+    margin: 0 16px 0 16px;
+  }
+
+  .tail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .icon {
+      margin-right: 16px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 4px 8px;
+      background-color: $gray50;
+      border-radius: 24px;
+
+      .text {
+        padding: 0 9px 0 9px;
+      }
+    }
+  }
+}

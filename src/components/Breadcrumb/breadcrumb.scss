@@ -1,0 +1,31 @@
+@import "../../sass-modules/colors";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+.breadcrumbs {
+  font-family: "IBM Plex Sans", sans-serif;
+
+  &-item {
+    display: inline;
+  }
+
+  &-item:not(:last-of-type)::after {
+    content: "/";
+    padding: 10px;
+    color: $gray500;
+  }
+
+  &-links {
+    text-decoration: none;
+    color: $gray500;
+
+    &-active {
+      color: $gray700;
+      font-weight: bold;
+    }
+  }
+
+  &-links:hover {
+    color: $gray700;
+    text-decoration: none;
+  }
+}
