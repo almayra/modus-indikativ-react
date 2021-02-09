@@ -1,4 +1,5 @@
 import styles from "./colors.module.scss";
+import React from "react";
 
 export const Empofarm = () => (
   <div

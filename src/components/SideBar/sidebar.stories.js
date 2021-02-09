@@ -2,6 +2,7 @@ import { Sidebar } from "./SideBar";
 import { Menu } from "./Menu";
 import { SubMenu } from "./SubMenu";
 import { CounterBadge } from "./CounterBadge";
+import React from "react";
 
 export const Default = () => (
   <Sidebar>

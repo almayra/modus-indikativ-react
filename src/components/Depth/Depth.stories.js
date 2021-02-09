@@ -1,5 +1,6 @@
 import { Depth } from "./Depth";
 import { Source } from "@storybook/addon-docs/blocks";
+import React from "react";
 
 const Template = (args) => (
   <Depth {...args}>

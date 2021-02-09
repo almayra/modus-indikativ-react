@@ -10,6 +10,7 @@ interface IButton {
   prepend?: ReactNode;
   split?: boolean;
   containerStyle?: CSSProperties;
+  className?: string;
 }
 
 export const Button = ({
@@ -20,6 +21,7 @@ export const Button = ({
   prepend,
   split,
   containerStyle = {},
+  className,
   ...props
 }: IButton) => {
   return (
@@ -29,6 +31,7 @@ export const Button = ({
         "component-btn",
         `component-btn-${size}`,
         `component-btn-${theme}`,
+        `${className}`,
       ].join(" ")}
       {...props}
       style={containerStyle}

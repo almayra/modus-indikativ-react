@@ -8,7 +8,7 @@ export const IconWithText = Template.bind({});
 IconWithText.args = {
   state: "text-icon",
   label: "Input label",
-  icon: <ChevronSort16 className="sub-component-icon" />,
+  icon: <ChevronSort16 className="addon-icon" />,
 };
 
 export const Text = Template.bind({});

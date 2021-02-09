@@ -94,6 +94,10 @@
     background-position-y: 50%;
   }
 
+  input[type="file"] {
+    display: none !important;
+  }
+
   select {
     padding-right: 22px;
     -moz-appearance: none; /* Firefox */

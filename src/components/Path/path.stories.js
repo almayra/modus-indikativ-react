@@ -1,5 +1,6 @@
 import { Path } from "./Path";
 import { Checkmark16 } from "@carbon/icons-react";
+import React from "react";
 
 export const PlayGround = (args) => <Path {...args} />;
 PlayGround.args = {

@@ -1,53 +1,26 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Searchbar } from "../Searchbar/Searchbar";
-import { Checkbox } from "../Checkbox/Checkbox";
 import { Button } from "../Button/Button";
-import { Settings32 } from "@carbon/icons-react";
 import "./tablecontroller.scss";
 
-export const TableController = () => {
+interface ITableController {
+  children: React.ReactNode;
+  className?: string;
+  style?: CSSProperties;
+  buttonLabel: string;
+}
+
+export const TableController = ({
+  children,
+  className,
+  style,
+  buttonLabel,
+}: ITableController) => {
   return (
-    <div className="controller-container">
+    <div className={`controller-container ${className}`} style={style}>
       <Searchbar width="388px" placeholder="Cari..." />
-      <div className="wrapper">
-        <Checkbox
-          containerStyle={{ height: 24 }}
-          theme="monochrome"
-          checked={false}
-          label="Menu"
-          className="item"
-        />
-        <Checkbox
-          containerStyle={{ height: 24 }}
-          theme="monochrome"
-          checked={false}
-          label="Menu"
-          className="item"
-        />
-        <Checkbox
-          containerStyle={{ height: 24 }}
-          theme="monochrome"
-          checked={true}
-          label="Menu"
-          className="item"
-        />
-        <Checkbox
-          containerStyle={{ height: 24 }}
-          theme="monochrome"
-          checked={true}
-          label="Menu"
-          className="item"
-        />
-        <Checkbox
-          containerStyle={{ height: 24 }}
-          theme="monochrome"
-          checked={true}
-          label="Menu"
-          className="item"
-        />
-        <Settings32 className="item" />
-      </div>
-      <Button theme="primary">Button Primary</Button>
+      <div className="wrapper">{children}</div>
+      <Button theme="primary">{buttonLabel}</Button>
     </div>
   );
 };

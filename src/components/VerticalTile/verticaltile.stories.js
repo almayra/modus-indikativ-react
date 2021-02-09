@@ -7,6 +7,7 @@ import CardSection from "./CardSection";
 import { Badge } from "../Badge/Badge";
 import { Overflow } from "../Overflow/Overflow";
 import OverflowItem from "../Overflow/OverflowItem";
+import React from "react";
 
 export const CardSectionTile = () => (
   <VerticalTile>

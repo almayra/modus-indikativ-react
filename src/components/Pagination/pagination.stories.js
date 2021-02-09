@@ -1,5 +1,6 @@
 import { ChevronLeft16, ChevronRight16 } from "@carbon/icons-react";
 import "./pagination.scss";
+import React from "react";
 
 export const FivePagePagination = () => {
   return (

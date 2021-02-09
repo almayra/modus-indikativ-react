@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import "./chatroom.scss";
 import ChatBottomText from "./ChatBottomText";
 import BodyShort from "../Typography/BodyShort";
@@ -12,6 +12,8 @@ interface IChatRoom {
   append?: ReactNode;
   img?: string;
   linkText?: boolean;
+  className?: string;
+  style?: CSSProperties;
 }
 
 export const ChatRoom = ({
@@ -23,9 +25,11 @@ export const ChatRoom = ({
   img,
   linkText,
   sender = "inbound-chat",
+  className,
+  style,
 }: IChatRoom) => {
   return (
-    <div className={`chat-room ${sender}`}>
+    <div className={`chat-room ${sender} ${className}`} style={style}>
       <div className="bubble">
         {img ? (
           // <div className={` ${img ? "with-image" : ""}`}>{img}</div>

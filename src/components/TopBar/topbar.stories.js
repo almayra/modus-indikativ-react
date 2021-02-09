@@ -2,6 +2,7 @@ import { TopBar } from "./TopBar";
 import EMPOFARM from "../../assets/images/empofarm.png";
 import ODOO from "../../assets/images/odoo.png";
 import AVATAR from "../../assets/images/avatar.png";
+import React from "react";
 
 export const TopBarAdmin = () => (
   <TopBar

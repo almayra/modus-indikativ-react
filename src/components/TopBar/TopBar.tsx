@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Select } from "../Select/Select";
 import "./topbar.scss";
 import Metadata from "../Typography/Metadata";
@@ -12,6 +12,8 @@ interface ITopBar {
   username: string;
   adminRole: string;
   children: React.ReactNode;
+  className?: string;
+  style?: CSSProperties;
 }
 
 export const TopBar = ({
@@ -21,16 +23,18 @@ export const TopBar = ({
   username,
   adminRole,
   children,
+  className,
+  style,
 }: ITopBar) => {
   return (
-    <Depth depth="16">
-      <div className="navbar-container">
+    <Depth depth="16" containerStyle={{ width: "100%" }}>
+      <div className={`navbar-container ${className}`} style={style}>
         <div className="head">
           <img className="logo" src={firstLogo} alt="empofarm" height={32} />
           <img className="logo" src={secondLogo} alt="odoo" height={24} />
           <div className="divider" />
           <Select
-            containerStyle={{ width: "fit-content", backgroundColor: "#fff" }}
+            containerStyle={{ backgroundColor: "#fff" }}
             className="select"
             type="inline-select"
             placeholder="User Role"

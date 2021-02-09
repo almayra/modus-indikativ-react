@@ -1,4 +1,5 @@
 import { Checkbox } from "./Checkbox.tsx";
+import React from "react";
 
 export const PlayGround = (args) => <Checkbox {...args} />;
 PlayGround.args = {

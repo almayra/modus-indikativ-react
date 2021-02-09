@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { CSSProperties, ReactNode, useState } from "react";
 import "./dropdown.scss";
 import { ChevronDown16, RadioButton16 } from "@carbon/icons-react";
 import BodyShort from "../Typography/BodyShort";
@@ -9,6 +9,8 @@ interface IDropdown {
   append?: boolean;
   dropdownLabel?: string;
   children: ReactNode;
+  className?: string;
+  style?: CSSProperties;
 }
 export const Dropdown = ({
   dropdownTitle,
@@ -16,6 +18,8 @@ export const Dropdown = ({
   append,
   dropdownLabel,
   children,
+  className,
+  style,
 }: IDropdown) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -24,7 +28,7 @@ export const Dropdown = ({
   };
 
   return (
-    <div className="dropdown">
+    <div className={`dropdown ${className}`} style={style}>
       {dropdownLabel ? (
         <BodyShort variant="01">{dropdownLabel}</BodyShort>
       ) : null}

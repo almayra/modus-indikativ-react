@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import "./path.scss";
 
 interface IPath {
@@ -7,15 +7,25 @@ interface IPath {
   right?: boolean;
   left?: boolean;
   children: ReactNode;
+  className?: string;
+  style?: CSSProperties;
 }
 
-export const Path = ({ stage, state, right, left, children }: IPath) => {
+export const Path = ({
+  stage,
+  state,
+  right,
+  left,
+  children,
+  className,
+  style,
+}: IPath) => {
   return (
-    <div className={`path ${state}`}>
+    <span className={`path ${state} ${className}`} style={style}>
       {right ? <span className={`divider-after`}></span> : null}
-      <div className={`${stage}`}>{children}</div>
+      <span className={`${stage}`}>{children}</span>
       {left ? <span className={`divider-before`}></span> : null}
-    </div>
+    </span>
   );
 };
 

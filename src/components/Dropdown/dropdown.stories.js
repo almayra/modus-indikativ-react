@@ -1,5 +1,6 @@
 import { Dropdown } from "./Dropdown";
 import MenuItem from "./MenuItem";
+import React from "react";
 
 export const Playground = (args) => <Dropdown {...args} />;
 Playground.args = {

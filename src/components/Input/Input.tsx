@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Label from "./Label";
 import BottomText from "./BottomText";
 import "./input.scss";
+import "../Button/button.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Input,
@@ -13,11 +14,11 @@ import {
 
 interface IInput extends HTMLInputElement {
   state: "rest" | "focused" | "error" | "valid";
-  inputText: string;
+  inputText?: string;
   inputLabel: string;
-  bottomText: string;
-  preffix: ReactNode;
-  suffix: ReactNode;
+  bottomText?: string;
+  preffix?: ReactNode;
+  suffix?: ReactNode;
   type: "text" | "textarea" | "number" | "password" | "file" | "date";
 }
 
@@ -41,6 +42,13 @@ export const CInput = ({
         ) : (
           ""
         )}
+
+        {type === "file" ? (
+          <label className="component-btn component-btn-secondary component-btn-medium">
+            Browse File
+          </label>
+        ) : null}
+
         <Input placeholder={inputText} type={type} className="input" />
         {suffix ? (
           <InputGroupAddon addonType="append">

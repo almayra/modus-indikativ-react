@@ -1,15 +1,17 @@
 @import "../../sass-modules/colors";
 
 .parent-list {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: $gray700;
 
   .menu {
-    width: 97%;
+    width: 100%;
     padding: 0;
     padding-top: 8px;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
     margin-top: 58px;
     position: absolute;
     display: flex;

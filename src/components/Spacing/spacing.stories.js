@@ -1,4 +1,5 @@
 import styles from "./spacing.module.scss";
+import React from "react";
 
 export const Spacing = () => (
   <div>

@@ -1,5 +1,6 @@
 import { CInput } from "./Input.tsx";
 import { ChevronSort16 } from "@carbon/icons-react";
+import React from "react";
 
 export const PlayGround = (args) => <CInput {...args} />;
 PlayGround.args = { inputText: "Placeholder", state: "rest" };

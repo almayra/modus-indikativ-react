@@ -1,5 +1,6 @@
 import { Overflow } from "./Overflow";
 import OverflowItem from "./OverflowItem";
+import React from "react";
 
 export const Playground = (args) => <Overflow {...args} />;
 Playground.args = {

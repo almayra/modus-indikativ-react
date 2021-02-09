@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 
 interface ITableCell extends React.HTMLAttributes<HTMLTableDataCellElement> {
   children: React.ReactNode;
@@ -6,6 +6,8 @@ interface ITableCell extends React.HTMLAttributes<HTMLTableDataCellElement> {
   bold?: boolean;
   prepend?: ReactNode;
   dualString?: boolean;
+  className?: string;
+  style?: CSSProperties;
 }
 
 export const TableCell = ({
@@ -14,13 +16,18 @@ export const TableCell = ({
   prepend,
   dualString,
   colSpan,
+  className,
+  style,
   ...props
 }: ITableCell) => {
   return (
     <td
       {...props}
       colSpan={colSpan}
-      className={`${bold ? "bold" : null} ${dualString ? "dual-string" : null}`}
+      style={style}
+      className={`${bold ? "bold" : null} ${
+        dualString ? "dual-string" : null
+      } ${className}`}
     >
       {prepend ? <span className="icon">{prepend}</span> : null}
       {children}

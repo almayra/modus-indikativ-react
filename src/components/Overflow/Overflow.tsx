@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { CSSProperties, ReactNode, useState } from "react";
 import { OverflowMenuVertical16 } from "@carbon/icons-react";
 import "./overflow.scss";
 import { Depth } from "../Depth/Depth";
@@ -7,9 +7,10 @@ interface IOverflow {
   dark?: boolean;
   children: ReactNode;
   className?: string;
+  style?: CSSProperties;
 }
 
-export const Overflow = ({ dark, children, className }: IOverflow) => {
+export const Overflow = ({ dark, children, className, style }: IOverflow) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleDropdown = () => {
@@ -24,6 +25,7 @@ export const Overflow = ({ dark, children, className }: IOverflow) => {
               dark ? "dark" : ""
             }`}
             onClick={toggleDropdown}
+            style={style}
           >
             <OverflowMenuVertical16 />
           </button>

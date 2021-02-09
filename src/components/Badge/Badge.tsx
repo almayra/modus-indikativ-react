@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import "./badge.scss";
 
 interface IBadge {
@@ -6,6 +6,7 @@ interface IBadge {
   inputLabel: ReactNode;
   icon?: React.ReactNode;
   className?: string;
+  style?: CSSProperties;
 }
 
 export const Badge = ({
@@ -13,9 +14,13 @@ export const Badge = ({
   inputLabel,
   icon,
   className,
+  style,
 }: IBadge) => {
   return (
-    <div className={`label-component label-${color} ${className}`}>
+    <div
+      className={`label-component label-${color} ${className}`}
+      style={style}
+    >
       <span className={["label"].join("")}>
         {icon ? icon : null}
         {inputLabel}

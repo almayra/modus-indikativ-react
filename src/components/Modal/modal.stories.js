@@ -2,6 +2,7 @@ import { Modal } from "./Modal";
 import { ModalBody } from "./ModalBody";
 import { ModalFooter } from "./ModalFooter";
 import { ModalHead } from "./ModalHead";
+import React from "react";
 
 export const Default = (args) => (
   <Modal size="large" {...args}>

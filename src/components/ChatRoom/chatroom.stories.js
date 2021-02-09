@@ -2,6 +2,7 @@ import { ChatRoom } from "./ChatRoom";
 import { Document16, Download16 } from "@carbon/icons-react";
 import FILE from "../../assets/images/filepreview.png";
 import Grid from "../Layout/Grid/Grid";
+import React from "react";
 
 export const Playground = (args) => <ChatRoom {...args} />;
 Playground.args = {

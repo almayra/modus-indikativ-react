@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "./Badge";
 import { Document16 } from "@carbon/icons-react";
 
