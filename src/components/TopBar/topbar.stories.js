@@ -18,7 +18,7 @@ export const TopBarAdmin = () => (
 );
 
 const TopBarStory = {
-  title: "Organism/Top Bar",
+  title: "Empofarm/Organism/Top Bar",
   component: TopBar,
 };
 

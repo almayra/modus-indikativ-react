@@ -9,7 +9,7 @@ export const ButtonPair = () => (
   </ButtonGroup>
 );
 const ButtonGroupStory = {
-  title: "Molecule/Button Group",
+  title: "Empofarm/Molecule/Button Group",
   component: ButtonGroup,
 };
 

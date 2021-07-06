@@ -38,7 +38,7 @@ export const withIcon = () => (
 );
 
 const BadgeStory = {
-  title: "Atom/Badge",
+  title: "Empofarm/Atom/Badge",
   component: Badge,
 };
 

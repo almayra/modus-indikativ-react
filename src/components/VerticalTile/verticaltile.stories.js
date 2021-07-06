@@ -42,7 +42,7 @@ export const Primary = () => (
 );
 
 const VerticalTileStory = {
-  title: "Organism/Vertical Tile",
+  title: "Empofarm/Organism/Vertical Tile",
   component: VerticalTile,
 };
 

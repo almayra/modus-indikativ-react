@@ -40,7 +40,7 @@ export const WithText = () => (
 );
 
 const CheckboxStory = {
-  title: "Atom/Checkbox",
+  title: "Empofarm/Atom/Checkbox",
   component: Checkbox,
 };
 

@@ -49,7 +49,7 @@ export const MenuItemSize = () => (
   </div>
 );
 const OverflowStory = {
-  title: "Molecule/Overflow",
+  title: "Empofarm/Molecule/Overflow",
   component: Overflow,
 };
 

@@ -69,7 +69,7 @@ export const Types = () => (
 );
 
 const InputStory = {
-  title: "Molecule/Form/Form Field",
+  title: "Empofarm/Molecule/Form Field",
   component: CInput,
 };
 

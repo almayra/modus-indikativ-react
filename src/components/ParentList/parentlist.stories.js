@@ -21,7 +21,7 @@ export const withMenu = () => (
 );
 
 const ParentListStory = {
-  title: "Molecule/Parent List",
+  title: "Empofarm/Molecule/Parent List",
   component: ParentList,
 };
 

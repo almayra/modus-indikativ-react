@@ -98,7 +98,7 @@ export const All = () => {
 };
 
 const IconStory = {
-  title: "Atom/Icons",
+  title: "Empofarm/Atom/Icons",
   decorators: [centerDecorator],
   parameters: {
     docs: {

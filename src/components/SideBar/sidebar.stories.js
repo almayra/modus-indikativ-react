@@ -66,7 +66,7 @@ export const NoIconWithSubmenu = () => (
 );
 
 const SideBarStory = {
-  title: "Organism/Side Bar",
+  title: "Empofarm/Organism/Side Bar",
   component: Sidebar,
 };
 

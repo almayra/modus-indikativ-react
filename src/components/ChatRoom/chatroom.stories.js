@@ -52,7 +52,7 @@ export const WithImage = () => (
 );
 
 const ChatRoomStory = {
-  title: "Organism/Chat Room",
+  title: "Empofarm/Organism/Chat Room",
   component: ChatRoom,
 };
 

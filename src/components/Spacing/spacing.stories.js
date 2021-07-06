@@ -83,7 +83,7 @@ export const Spacing = () => (
 );
 
 const SpacingStory = {
-  title: "Atom/Spacing Token",
+  title: "Empofarm/Atom/Spacing Token",
   parameters: {
     previewTabs: {
       "storybook/docs/panel": {

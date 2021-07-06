@@ -75,7 +75,7 @@ export const ActivePagination = () => {
 };
 
 const PaginationStory = {
-  title: "Molecule/Pagination",
+  title: "Empofarm/Molecule/Pagination",
 };
 
 export default PaginationStory;

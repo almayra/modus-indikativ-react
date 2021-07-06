@@ -25,7 +25,7 @@ export const DropdownMenu = () => (
 );
 
 const DropdownStory = {
-  title: "Molecule/Dropdown",
+  title: "Empofarm/Molecule/Dropdown",
   component: Dropdown,
 };
 

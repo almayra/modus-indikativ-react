@@ -34,7 +34,7 @@ export const Default = () => (
 );
 
 const TableControllerStory = {
-  title: "Molecule/Table Controller",
+  title: "Empofarm/Molecule/Table Controller",
   component: TableController,
 };
 

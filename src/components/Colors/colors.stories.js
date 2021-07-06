@@ -312,7 +312,7 @@ export const DefaultGray = () => (
 );
 
 const ColorStory = {
-  title: "Atom/Color Token",
+  title: "Empofarm/Atom/Color Token",
   parameters: {
     previewTabs: {
       "storybook/docs/panel": {

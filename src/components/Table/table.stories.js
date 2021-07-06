@@ -175,7 +175,7 @@ export const TableBorderedDark = () => (
 );
 
 const TableStory = {
-  title: "Organism/Table",
+  title: "Empofarm/Organism/Table",
 };
 
 export default TableStory;

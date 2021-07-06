@@ -65,3 +65,23 @@
  *
  * Will add a new dropdown in your toolbar with options light and dark.
  **/
+
+import CSSReset from "@chakra-ui/css-reset"
+import { ChakraProvider, Box } from "@chakra-ui/react"
+import { addDecorator } from "@storybook/react"
+import * as React from "react"
+import { theme } from "../src/chakraComponents/styles.tsx"
+
+export const Chakra = ({ children }) => (
+  <ChakraProvider theme={theme}>
+    <CSSReset />
+    <Box>
+      {children}
+    </Box>
+  </ChakraProvider>
+)
+
+addDecorator(StoryFn =>
+  <Chakra>
+    <StoryFn />
+  </Chakra>)

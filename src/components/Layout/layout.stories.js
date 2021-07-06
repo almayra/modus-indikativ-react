@@ -69,7 +69,7 @@ export const PlayGround = (args) => {
 };
 
 const LayoutStory = {
-  title: "Atom/Layout",
+  title: "Empofarm/Atom/Layout",
   component: Grid,
 };
 

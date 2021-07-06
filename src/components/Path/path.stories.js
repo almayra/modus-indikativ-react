@@ -32,7 +32,7 @@ export const PathFlow = () => (
 );
 
 const PathStory = {
-  title: "Molecule/Path",
+  title: "Empofarm/Molecule/Path",
   component: Path,
 };
 

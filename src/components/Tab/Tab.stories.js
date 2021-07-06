@@ -47,7 +47,7 @@ export const WithIcon = () => (
 );
 
 const TabStory = {
-  title: "Atom/Tab",
+  title: "Empofarm/Atom/Tab",
   component: Tab,
 };
 

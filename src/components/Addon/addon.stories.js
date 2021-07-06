@@ -26,7 +26,7 @@ Icon.args = {
 };
 
 const AddonStory = {
-  title: "Atom/Addon",
+  title: "Empofarm/Atom/Addon",
   component: Addon,
 };
 

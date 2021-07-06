@@ -28,7 +28,7 @@ DepthElevation.args = {
 };
 
 const ElevationStory = {
-  title: "Atom/Depth",
+  title: "Empofarm/Atom/Depth",
   component: Depth,
 };
 

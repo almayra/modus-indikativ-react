@@ -89,7 +89,7 @@ export const WithIcon = () => (
 );
 
 const ButtonStory = {
-  title: "Atom/Button",
+  title: "Empofarm/Atom/Button",
   component: Button,
 };
 

@@ -24,7 +24,7 @@ export const Default = (args) => (
 );
 
 const ModalStory = {
-  title: "Molecule/Modal",
+  title: "Empofarm/Molecule/Modal",
   component: Modal,
 };
 
