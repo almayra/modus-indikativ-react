@@ -28,6 +28,16 @@ module.exports = {
     });
     config.resolve.extensions.push(".ts", ".tsx");
 
-    return config;
+    return {
+      ...config,
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...config.resolve.alias,
+          "@emotion/core": "@emotion/react",
+          "emotion-theming": "@emotion/react",
+        }
+      }
+    }
   },
 };
